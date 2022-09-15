@@ -38,7 +38,7 @@ const SellerRegister = () => {
     email: data.email,
     types:data.types
   }
-  fetch("http://localhost:5000/users", {
+  fetch("https://local-bazar-server-site.onrender.com/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -79,7 +79,7 @@ const SellerRegister = () => {
           
 
           //  send to database
-          fetch("http://localhost:5000/seller", {
+          fetch("https://local-bazar-server-site.onrender.com/seller", {
             method: "POST",
             headers: {
               "content-type": "application/json",

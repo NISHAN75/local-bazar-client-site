@@ -10,7 +10,7 @@ const MangeModal = ({
   const { sellerEmail, partName, _id } = removeOrder;
   const handleDelete = (orderId) => {
     console.log("click", orderId);
-    const url = `http://localhost:5000/allOrders/${_id}`;
+    const url = `https://local-bazar-server-site.onrender.com/allOrders/${_id}`;
     fetch(url, {
       method: "DELETE",
       headers: {

@@ -33,7 +33,7 @@ const ClientRegister = () => {
     email: data.email,
     types:data.types
   }
-  fetch("http://localhost:5000/users", {
+  fetch("https://local-bazar-server-site.onrender.com/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -76,7 +76,7 @@ const ClientRegister = () => {
           
 
           //  send to database
-          fetch("http://localhost:5000/client", {
+          fetch("https://local-bazar-server-site.onrender.com/client", {
             method: "POST",
             headers: {
               "content-type": "application/json",
@@ -102,7 +102,7 @@ const ClientRegister = () => {
      
       });
 
-      fetch("http://localhost:5000/users", {
+      fetch("https://local-bazar-server-site.onrender.com/users", {
               method: "POST",
               headers: {
                 "content-type": "application/json",

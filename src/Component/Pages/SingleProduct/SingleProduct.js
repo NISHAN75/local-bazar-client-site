@@ -23,7 +23,7 @@ const SingleProduct = () => {
     isLoading,
     refetch,
   } = useQuery("products", () =>
-    fetch(`http://localhost:5000/products/${id}`).then((res) => res.json())
+    fetch(`https://local-bazar-server-site.onrender.com/products/${id}`).then((res) => res.json())
   );
   if (isLoading) {
     return <Loading></Loading>;
@@ -44,7 +44,7 @@ const SingleProduct = () => {
     sellerEmail,
     shipment
    }
-   fetch("http://localhost:5000/orders", {
+   fetch("https://local-bazar-server-site.onrender.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

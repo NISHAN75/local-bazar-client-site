@@ -8,7 +8,7 @@ const useTypes = (user ) => {
     useEffect(() => {
       const email = user?.email;
       if (email) {
-        fetch(`http://localhost:5000/users/${email}`, {
+        fetch(`https://local-bazar-server-site.onrender.com/users/${email}`, {
           method: "GET"
         })
           .then((res) => res.json())

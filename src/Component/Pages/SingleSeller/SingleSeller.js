@@ -8,7 +8,7 @@ const SingleSeller = () => {
   console.log(id);
   const [seller, setSeller] = useState([]);
   useEffect(() => {
-    const url = fetch(`http://localhost:5000/seller/${id}`)
+    const url = fetch(`https://local-bazar-server-site.onrender.com/seller/${id}`)
       .then((res) => res.json())
       .then((data) => setSeller(data));
   }, []);

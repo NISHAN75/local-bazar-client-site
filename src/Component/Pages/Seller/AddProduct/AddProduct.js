@@ -27,7 +27,7 @@ const AddProduct = () => {
       price: data.price,
     };
     console.log(products)
-    fetch("http://localhost:5000/products", {
+    fetch("https://local-bazar-server-site.onrender.com/products", {
       method: "POST",
       headers: {
         "content-type": "application/json"

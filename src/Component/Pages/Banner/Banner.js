@@ -16,7 +16,7 @@ const Banner = () => {
   }
   const onSubmit = async (data) => {
     const location = data.location;
-    const url = `http://localhost:5000/seller?roadName=${location}`;
+    const url = `https://local-bazar-server-site.onrender.com/seller?roadName=${location}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setSellers(data));

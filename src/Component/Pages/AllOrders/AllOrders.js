@@ -21,7 +21,7 @@ const AllOrders = () => {
   
   useEffect(() => {
     if (types === "seller") {
-      const url = "http://localhost:5000/allOrders";
+      const url = "https://local-bazar-server-site.onrender.com/allOrders";
       fetch(url, {
         method: "Get"
       })

@@ -48,7 +48,7 @@ const UserInput = () => {
           
 
           //  send to database
-          fetch("http://localhost:5000/profile", {
+          fetch("https://local-bazar-server-site.onrender.com/profile", {
             method: "POST",
             headers: {
               "content-type": "application/json",

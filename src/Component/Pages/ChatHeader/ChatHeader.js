@@ -6,7 +6,7 @@ import './ChatHeader.css'
 
 
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://local-bazar-chat-server.onrender.com");
 
 const ChatHeader = () => {
     const [username, setUsername] = useState("");

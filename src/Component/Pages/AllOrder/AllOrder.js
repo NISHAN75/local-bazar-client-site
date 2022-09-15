@@ -8,7 +8,7 @@ const AllOrder = ({ order, index, setRemoveOrder }) => {
     const payment = {
       shipment: "delevered",
     };
-    fetch(`http://localhost:5000/orders/${_id}`, {
+    fetch(`https://local-bazar-server-site.onrender.com/orders/${_id}`, {
       method: "PATCH",
       body: JSON.stringify(payment),
     })

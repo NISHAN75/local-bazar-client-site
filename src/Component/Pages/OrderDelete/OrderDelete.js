@@ -8,7 +8,7 @@ const OrderDelete = ({ setRemoveOrder, setOrders, removeOrder, orders }) => {
   const { clientEmail, partName } = removeOrder;
   const handleDelete = (orderId) => {
     console.log("click", orderId);
-    const url = `http://localhost:5000/orders?email=${removeOrder.clientEmail}`;
+    const url = `https://local-bazar-server-site.onrender.com/orders?email=${removeOrder.clientEmail}`;
     console.log(url);
 
     fetch(url, {

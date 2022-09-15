@@ -20,7 +20,7 @@ const MyOrders = () => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      const url = `http://localhost:5000/orders?email=${user.email}`;
+      const url = `https://local-bazar-server-site.onrender.com/orders?email=${user.email}`;
       fetch(url, {
         method: "Get"
       })

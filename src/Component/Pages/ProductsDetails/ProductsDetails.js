@@ -12,14 +12,14 @@ const ProductsDetails = () => {
   const [products, setProducts] = useState();
   const [seller, setSeller] = useState();
   useEffect(() => {
-    const url = `http://localhost:5000/products?email=${email}`;
+    const url = `https://local-bazar-server-site.onrender.com/products?email=${email}`;
     console.log(url);
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [email]);
   useEffect(() => {
-    const url = `http://localhost:5000/pList/${email}`;
+    const url = `https://local-bazar-server-site.onrender.com/pList/${email}`;
     console.log(url);
     fetch(url)
       .then((res) => res.json())
