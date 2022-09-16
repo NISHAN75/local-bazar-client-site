@@ -4,12 +4,12 @@ import { useState } from "react";
 import Chat from '../Chat/Chat';
 import './ChatHeader.css'
 
+// https://local-bazar-chat-server.onrender.com
 
-
-const socket = io.connect("https://local-bazar-chat-server.onrender.com");
+const socket = io.connect(process.env.PORT);
 
 const ChatHeader = () => {
-    const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("");
   const [room, setRoom] = useState("");
   const [showChat, setShowChat] = useState(false);
 
