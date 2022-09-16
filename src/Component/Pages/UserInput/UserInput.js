@@ -1,9 +1,9 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import useAuth from "../../../Hooks/useAuth";
+
 
 
 const UserInput = () => {
@@ -60,8 +60,8 @@ const UserInput = () => {
               if (inserted.insertedId) {
                 toast.success(
                   <p className="text-primary">Profile information Added Successfully</p>
+                  
                 );
-                reset();
               } else {
                 toast.error(
                   <p className="text-primary">Sorry! Did not add Profile</p>
@@ -70,9 +70,10 @@ const UserInput = () => {
             });
         }
         console.log("imgdb", result);
+        reset();
       });
 
-    // reset();
+  
   };
   return (
     <section>
@@ -87,7 +88,7 @@ const UserInput = () => {
             </label>
             <input
               name="name"
-              value={user?.displayName}
+              
               type="text"
               placeholder="Enter Your Name"
               className="input input-bordered w-full text-black"
@@ -112,7 +113,7 @@ const UserInput = () => {
             </label>
             <input
               type="text"
-              value={user?.email}
+              
               placeholder="Enter Your email"
               className="input input-bordered w-full text-black"
               {...register("email", {

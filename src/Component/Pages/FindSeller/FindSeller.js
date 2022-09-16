@@ -24,9 +24,6 @@ const FindSeller = ({ seller }) => {
         <p className="font-bold text-primary">Present Location:  {roadName}</p>
         <div className="card-actions justify-center my-5">
           <div>
-            <button><Link to={`/seller/${_id}`}  className="btn btn-primary text-white">Profile</Link></button>
-          </div>
-          <div>
           <button><Link to={`/pList/${email}`} className="btn btn-primary text-white">Products</Link></button>
           </div>
         </div>

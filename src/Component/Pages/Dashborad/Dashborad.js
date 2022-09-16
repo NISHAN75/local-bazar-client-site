@@ -59,6 +59,13 @@ const [types]=useTypes(user);
             </Link>
           </li>: ''
           }
+          {
+            types === "seller" ? <li className="bg-white hover:text-primary mr-3  mb-2 rounded-lg">
+            <Link to="allProduct" className="font-bold">
+              All Products
+            </Link>
+          </li>: ''
+          }
         
         </ul>
       </div>

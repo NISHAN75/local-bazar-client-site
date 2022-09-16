@@ -23,6 +23,7 @@ const SingleSeller = () => {
                 <img src={seller.img} className="w-full h-auto" />
               </div>
             </div>
+            
           </div>
           <div className="seller-info">
             <div>

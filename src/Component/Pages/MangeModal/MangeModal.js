@@ -12,10 +12,7 @@ const MangeModal = ({
     console.log("click", orderId);
     const url = `https://local-bazar-server-site.onrender.com/allOrders/${_id}`;
     fetch(url, {
-      method: "DELETE",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
+      method: "DELETE"
     })
       .then((res) => res.json())
       .then((data) => {
